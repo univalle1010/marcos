@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepa Más de Computadoras - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para el fondo oscuro y textos claros */
+        body {
+            background-color: white; /* Fondo oscuro */
+            color: black; /* Texto claro para contraste */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+
+        /* Título principal */
+        .main-title {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #333;
+            color: #e63946;
+        }
+        .main-title h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .main-title p {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+
+        /* Sección de educación sobre computadoras */
+        .components-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 60px 20px;
+        }
+
+        .component-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .component-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .component-card h3 {
+            font-size: 1.8rem;
+            color: #e63946;
+            margin-bottom: 15px;
+        }
+
+        .component-card p {
+            font-size: 1rem;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .component-icon {
+            font-size: 3rem;
+            color: #e63946;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1f1f1f;
+            color: #e1e1e1;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .main-title h1 {
+                font-size: 2.5rem;
+            }
+
+            .component-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .components-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .component-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .component-card p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PC STORE SUCRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte Técnico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Título principal -->
+    <div class="main-title">
+        <h1>Sepa Más de Computadoras</h1>
+        <p>Descubra los componentes y características que hacen funcionar a una computadora.</p>
+    </div>
+
+    <!-- Sección de componentes -->
+    <div class="container">
+        <div class="components-section">
+            <div class="component-card">
+                <div class="component-icon">
+                    <i class="bi bi-cpu"></i> <!-- Icono de CPU -->
+                </div>
+                <h3>Procesador (CPU)</h3>
+                <img height="300" width="300" src="procesador.jpg" alt="">
+                <p>El cerebro de la computadora. El procesador o CPU (Unidad Central de Procesamiento) es el encargado de ejecutar las instrucciones de los programas y controlar las operaciones básicas.</p>
+            </div>
+            <div class="component-card">
+                <div class="component-icon">
+                    <i class="bi bi-hdd"></i> <!-- Icono de disco duro -->
+                </div>          
+                <h3>Almacenamiento</h3>
+                <img height="300" width="300" src="almacenamiento.jpg" alt="">
+                <p>El almacenamiento es donde se guardan los datos y programas. Los discos duros (HDD) y las unidades de estado sólido (SSD) son los más comunes para almacenar la información.</p>
+            </div>
+            <div class="component-card">
+                <div class="component-icon">
+                    <i class="bi bi-card-image"></i> <!-- Icono de tarjeta gráfica -->
+                </div>
+                <h3>Tarjeta Gráfica</h3>
+                <img height="300" width="300" src="tarjetaGrafica.jpg" alt="">
+                <p>La tarjeta gráfica o GPU (Unidad de Procesamiento Gráfico) se encarga de procesar y renderizar las imágenes y videos que vemos en la pantalla de la computadora.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+        <p><a href="acercade.html">Acerca de</a> | <a href="sepamas.html">Sepa más de computadoras</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

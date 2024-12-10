@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="navbar bg-danger">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        PC'S
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pc_de_escritorio.html" class="dropdown-item">PCs de Escritorio</a></li>
+                        <li><a class="dropdown-item" href="componentes.html">Componentes</a></li>
+                        <li><a class="dropdown-item" href="gaming.html">Gaming PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        LAPTOP
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptop.html" class="dropdown-item" href="#">Laptops para Estudiantes</a></li>
+                    
+                        <li><a class="dropdown-item" href="laptopgaming.html">Gaming Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        ACCESORIOS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="teclados.html">Teclados</a></li>
+                        <li><a class="dropdown-item" href="mouse.html">Mouses</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        OFERTAS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="descuentos.html">Descuentos en PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        MÁS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="soporte.html">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <!-- Enlace que cambia según el estado de sesión -->
+
+                <a href="carrito.html" class="text-white fs-5 fw-bold">🛒 Carrito</a>
+                <a href="index.html" class="text-white fs-5 fw-bold">INICIO</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Componentes de Computadora</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Componente 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1p.jpg" class="card-img-top" alt="Procesador Ryzen 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Procesador Ryzen 9 9900X</h5>
+                        <p class="card-text">Velocidad: 3.6 GHz | 12 núcleos</p>
+                        <p class="card-text">Ideal para gaming y tareas de alto rendimiento</p>
+                        <button class="btn btn-success agregar-carrito" data-id="1" data-nombre="Procesador Ryzen 9 9900X" data-precio="1500" data-imagen="1p.jpg">
+                            1.500,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componente 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1ra.jpg" class="card-img-top" alt="Memoria RAM 64GB">
+                    <div class="card-body">
+                        <h5 class="card-title">Memoria RAM 64GB Fury Beast RGB</h5>
+                        <p class="card-text">Frecuencia: 3600 MHz | RGB customizable</p>
+                        <p class="card-text">Perfecta para multitareas y edición de video</p>
+                        <button class="btn btn-success agregar-carrito" data-id="2" data-nombre="Memoria RAM 64GB Fury Beast" data-precio="500" data-imagen="1ra.jpg">
+                            500,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componente 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1t.jpg" class="card-img-top" alt="Tarjeta de Video ROG STRIX RTX 4090">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta de Video ROG STRIX RTX 4090</h5>
+                        <p class="card-text">VRAM: 24GB GDDR6X | Soporte 4K</p>
+                        <p class="card-text">Ideal para gaming de alta resolución y VR</p>
+                        <button class="btn btn-success agregar-carrito" data-id="3" data-nombre="Tarjeta de Video ROG STRIX RTX 4090" data-precio="2500" data-imagen="1t.jpg">
+                            2.500,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componente 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1alma.jpg" class="card-img-top" alt="SSD 1TB Samsung 970 Evo">
+                    <div class="card-body">
+                        <h5 class="card-title">SSD 1TB Samsung 970 Evo</h5>
+                        <p class="card-text">Velocidad de lectura: 3500 MB/s</p>
+                        <p class="card-text">Carga de juegos y aplicaciones a alta velocidad</p>
+                        <button class="btn btn-success agregar-carrito" data-id="4" data-nombre="SSD 1TB Samsung 970 Evo" data-precio="150" data-imagen="1alma.jpg">
+                            150,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componente 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="2.fuente.jpg" class="card-img-top" alt="Fuente de Alimentación 850W">
+                    <div class="card-body">
+                        <h5 class="card-title">Fuente de Alimentación 850W</h5>
+                        <p class="card-text">Certificación 80 Plus Gold | Modular</p>
+                        <p class="card-text">Suficiente potencia para equipos de alto rendimiento</p>
+                        <button class="btn btn-success agregar-carrito" data-id="5" data-nombre="Fuente de Alimentación 850W" data-precio="100" data-imagen="2.fuente.jpg">
+                            100,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Componente 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1tarjetas.jpg" class="card-img-top" alt="Placa Base ASUS X570">
+                    <div class="card-body">
+                        <h5 class="card-title">Placa Base ASUS X570</h5>
+                        <p class="card-text">Soporta procesadores Ryzen de 3ª generación</p>
+                        <p class="card-text">Conectividad PCIe 4.0 para rendimiento extremo</p>
+                        <button class="btn btn-success agregar-carrito" data-id="6" data-nombre="Placa Base ASUS X570" data-precio="300" data-imagen="1tarjetas.jpg">
+                            300,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Componente 7 -->
+<div class="col">
+    <div class="card">
+        <img src="1alma.jpg" class="card-img-top" alt="Disco Duro 1TB Seagate">
+        <div class="card-body">
+            <h5 class="card-title">Disco Duro 1TB Seagate</h5>
+            <p class="card-text">Velocidad de transferencia: 7200 RPM</p>
+            <p class="card-text">Capacidad ideal para almacenamiento masivo</p>
+            <button class="btn btn-success agregar-carrito" data-id="7" data-nombre="Disco Duro 1TB Seagate" data-precio="120" data-imagen="1alma.jpg">
+                120,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Componente 8 -->
+
+
+
+<!-- Componente 10 -->
+<div class="col">
+    <div class="card">
+        <img src="1moni.jpg" class="card-img-top" alt="Monitor 27\" ASUS TUF Gaming">
+        <div class="card-body">
+            <h5 class="card-title">Monitor 27" ASUS TUF Gaming</h5>
+            <p class="card-text">Resolución 2560x1440 | Frecuencia de actualización 165Hz</p>
+            <p class="card-text">Ideal para gamers y creadores de contenido</p>
+            <button class="btn btn-success agregar-carrito" data-id="10" data-nombre="Monitor ASUS TUF" data-precio="500" data-imagen="1moni.jpg">
+                500,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Componente 11 -->
+<div class="col">
+    <div class="card">
+        <img src="teclado.jpg" class="card-img-top" alt="Teclado Mecánico Corsair K95 RGB">
+        <div class="card-body">
+            <h5 class="card-title">Teclado Mecánico Corsair K95 RGB</h5>
+            <p class="card-text">Teclas Cherry MX | Iluminación RGB personalizable</p>
+            <p class="card-text">Teclado premium para gamers y programadores</p>
+            <button class="btn btn-success agregar-carrito" data-id="11" data-nombre="Teclado Corsair K95" data-precio="150" data-imagen="teclado.jpg">
+                150,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5>Informacion</h5>
+                    <p><a href="acercade.html" class="footer-link">Acerca de</a></p>
+                    <p><a href="Creadores.html" class="footer-link">Creadores</a></p>
+                    
+                    
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Preguntas</h5>
+                    <p><a href="comocomprar.html" class="footer-link">Como comprar</a></p>
+                    <p><a href="sepamas.html" class="footer-link">Sepa mas de computadoras</a></p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <h5>Redes Sociales</h5>
+                    <p>📞 Teléfono: 69949446</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="facebook_icon-icons.com_59205.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://instagram.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="Instagram_icon-icons.com_66804.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+    
+            
+    
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

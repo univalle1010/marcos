@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212; /* Fondo oscuro */
+            color: #e1e1e1; /* Texto claro */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #1f1f1f;
+        }
+
+        .navbar a {
+            color: #ffffff !important;
+        }
+
+        .login-form {
+            background-color: #1f1f1f;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 100px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h2 {
+            color: #e63946;
+        }
+
+        .login-form input {
+            background-color: #333;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 8px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        .login-form button {
+            background-color: #e63946;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #d62c1a;
+        }
+
+        .footer {
+            background-color: #1f1f1f;
+            color: #e1e1e1;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PC STORE SUCRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte Técnico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item" id="user-section">
+                        <a id="login-link" class="nav-link text-white fs-5 fw-bold" href="#">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="container">
+        <div class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+        <p><a href="acercade.html">Acerca de</a> | <a href="sepamas.html">Sepa más de computadoras</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Variables para manejar el inicio de sesión
+        const loginLink = document.getElementById("login-link");
+        const userSection = document.getElementById("user-section");
+        const loginForm = document.getElementById("loginForm");
+        const usernameField = document.getElementById("username");
+        const passwordField = document.getElementById("password");
+
+        // Simulación de base de datos de usuarios
+        const validUsername = "usuario"; // Cambiar por un nombre real
+        const validPassword = "1234"; // Cambiar por una contraseña real
+
+        // Función para manejar el inicio de sesión
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = usernameField.value;
+            const password = passwordField.value;
+
+            if (username === validUsername && password === validPassword) {
+                // Usuario autenticado
+                sessionStorage.setItem("loggedIn", "true");
+                sessionStorage.setItem("username", username);
+                updateUI();
+                window.location.href = "index.html";  // Redirige al index.html después de iniciar sesión
+            } else {
+                alert("Usuario o contraseña incorrectos.");
+            }
+        });
+
+        // Función para actualizar la interfaz según el estado de sesión
+        function updateUI() {
+            const loggedIn = sessionStorage.getItem("loggedIn");
+
+            if (loggedIn === "true") {
+                const username = sessionStorage.getItem("username");
+                loginLink.textContent = `Bienvenido, ${username}`;
+                loginLink.href = "#";
+                loginLink.classList.remove("fs-5", "fw-bold");
+                loginLink.classList.add("fs-6", "fw-normal");
+                if (!document.getElementById("logout-link")) {
+                    userSection.innerHTML += `<a href="#" class="nav-link text-white fs-5 fw-bold" id="logout-link">Cerrar sesión</a>`;
+                    document.getElementById("logout-link").addEventListener("click", logout);
+                }
+            } else {
+                loginLink.textContent = "Iniciar sesión";
+                loginLink.href = "#";
+            }
+        }
+
+        // Función para cerrar sesión
+        function logout() {
+            sessionStorage.clear();
+            updateUI();
+            window.location.href = "index.html"; // Redirige a la página de inicio después de cerrar sesión
+        }
+
+        // Inicializar la UI en función del estado de sesión
+        updateUI();
+    </script>
+
+</body>
+</html>

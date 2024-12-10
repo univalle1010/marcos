@@ -1,0 +1,265 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #ff4c4c;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Logo */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar .logo a {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Título de la página */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Contenedor de productos */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de tarjetas */
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 15px;
+    max-height: 220px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Títulos de productos */
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descripción corta del producto */
+.card-text {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Botón Agregar al carrito */
+button {
+    width: 100%;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d43f3f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+/* Animaciones */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Botones de agregar al carrito con animación */
+button.agregar-carrito {
+    animation: bounce 1s infinite;
+}
+
+/* Hover en las imágenes de productos */
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Efecto de movimiento en tarjetas */
+.card:hover .card-body {
+    transform: translateY(-15px);
+    transition: transform 0.4s ease;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 28px;
+    }
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Pantallas pequeñas (Smartphones) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
+
+/* Efecto de fondo parallax para el body */
+body {
+    background: url('https://source.unsplash.com/random/1200x800?technology') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 1s ease-in-out;
+}
+
+/* Efecto para hacer el contenido más llamativo al entrar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1.5s ease-out;
+}

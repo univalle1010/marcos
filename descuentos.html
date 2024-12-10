@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos en PCs - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar bg-danger">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        PC'S
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pc_de_escritorio.html" class="dropdown-item">PCs de Escritorio</a></li>
+                        <li><a class="dropdown-item" href="componentes.html">Componentes</a></li>
+                        <li><a class="dropdown-item" href="gaming.html">Gaming PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        LAPTOP
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptop.html" class="dropdown-item" href="#">Laptops para Estudiantes</a></li>
+                        <li><a class="dropdown-item" href="laptopgaming.html">Gaming Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        ACCESORIOS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="teclados.html">Teclados</a></li>
+                        <li><a class="dropdown-item" href="mouse.html">Mouses</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        OFERTAS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="descuentos.html">Descuentos en PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        MÁS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="soporte.html">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <!-- Enlace que cambia según el estado de sesión -->
+
+                <a href="carrito.html" class="text-white fs-5 fw-bold">🛒 Carrito</a>
+                <a href="index.html" class="text-white fs-5 fw-bold">INICIO</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Descuentos en PCs</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- PC con descuento 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1descuento.jpg" class="card-img-top" alt="PC Gamer Razer Blade 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Razer Blade 15</h5>
+                        <p class="card-text">Intel i7 | GPU NVIDIA RTX 3070 | Pantalla 15.6” 144Hz</p>
+                        <p class="card-text">PC gaming ultradelgada con potencia para juegos AAA y productividad.</p>
+                        <p class="text-danger"><strong><s>Antes: 6.000,00 BS</s></strong></p>
+
+                        <p class="text-success"><strong>Ahora: 5.000,00 BS</strong></p>
+                        <button class="btn btn-success agregar-carrito" data-id="1" data-nombre="Razer Blade 15" data-precio="5000" data-imagen="1descuento.jpg">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC con descuento 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="2descuento.png" class="card-img-top" alt="HP Omen 30L">
+                    <div class="card-body">
+                        <h5 class="card-title">HP Omen 30L</h5>
+                        <p class="card-text">Intel i9 | GPU NVIDIA RTX 3080 | 32GB RAM</p>
+                        <p class="card-text">Potente PC gaming de alto rendimiento con una excelente refrigeración.</p>
+                        <p class="text-danger"><strong><s>Antes: 5.500,00 BS</s></strong></p>
+                        <p class="text-success"><strong>Ahora: 4.800,00 BS</strong></p>
+                        <button class="btn btn-success agregar-carrito" data-id="2" data-nombre="HP Omen 30L" data-precio="4800" data-imagen="2descuento.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC con descuento 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="3descuento.png" class="card-img-top" alt="Dell Alienware Aurora R12">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell Alienware Aurora R12</h5>
+                        <p class="card-text">Intel i7 | GPU NVIDIA RTX 3070 | 16GB RAM</p>
+                        <p class="card-text">Diseño futurista y alto rendimiento para juegos de última generación.</p>
+                        <p class="text-danger"><strong><s>Antes: 6.700,00 BS</s></strong></p>
+                        <p class="text-success"><strong>Ahora: 5.200,00 BS</strong></p>
+                        <button class="btn btn-success agregar-carrito" data-id="3" data-nombre="Dell Alienware Aurora R12" data-precio="5200" data-imagen="3descuento.png">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5>Informacion</h5>
+                    <p><a href="acercade.html" class="footer-link">Acerca de</a></p>
+                    <p><a href="Creadores.html" class="footer-link">Creadores</a></p>
+                    
+                    
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Preguntas</h5>
+                    <p><a href="comocomprar.html" class="footer-link">Como comprar</a></p>
+                    <p><a href="sepamas.html" class="footer-link">Sepa mas de computadoras</a></p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <h5>Redes Sociales</h5>
+                    <p>📞 Teléfono: 69949446</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="facebook_icon-icons.com_59205.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://instagram.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="Instagram_icon-icons.com_66804.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+    
+            
+    
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="carrito.js"></script>
+
+</body>
+</html>

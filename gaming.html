@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCs Gaming - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar bg-danger">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        PC'S
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pc_de_escritorio.html" class="dropdown-item">PCs de Escritorio</a></li>
+                        <li><a class="dropdown-item" href="componentes.html">Componentes</a></li>
+                        <li><a class="dropdown-item" href="gaming.html">Gaming PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        LAPTOP
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="laptop.html" class="dropdown-item" href="#">Laptops para Estudiantes</a></li>
+                      
+                        <li><a class="dropdown-item" href="laptopgaming.html">Gaming Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        ACCESORIOS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="teclados.html">Teclados</a></li>
+                        <li><a class="dropdown-item" href="mouse.html">Mouses</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-3">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        OFERTAS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="descuentos.html">Descuentos en PCs</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                        MÁS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="soporte.html">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <!-- Enlace que cambia según el estado de sesión -->
+
+                <a href="carrito.html" class="text-white fs-5 fw-bold">🛒 Carrito</a>
+                <a href="index.html" class="text-white fs-5 fw-bold">INICIO</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">PCs Gaming</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- PC Gaming 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="1w.jpg" class="card-img-top" alt="PC Gaming RTX 3080">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming RTX 3080</h5>
+                        <p class="card-text">Intel i9-11900K | 32GB RAM | RTX 3080 | 1TB SSD</p>
+                        <p class="card-text">Ideal para juegos 4K y VR</p>
+                        <button class="btn btn-success agregar-carrito" data-id="1" data-nombre="PC Gaming RTX 3080" data-precio="3500" data-imagen="imagenes pc/1.jpg">
+                            3.500,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC Gaming 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="2w.jpg" class="card-img-top" alt="PC Gaming Ryzen 9">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming Ryzen 9</h5>
+                        <p class="card-text">AMD Ryzen 9 5900X | 32GB RAM | RTX 3070 | 1TB SSD</p>
+                        <p class="card-text">Máximo rendimiento para los juegos más exigentes</p>
+                        <button class="btn btn-success agregar-carrito" data-id="2" data-nombre="PC Gaming Ryzen 9" data-precio="2800" data-imagen="2w.jpg">
+                            2.800,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC Gaming 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="3w.jpg" class="card-img-top" alt="PC Gaming Intel i7">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming Intel i7</h5>
+                        <p class="card-text">Intel i7-10700K | 16GB RAM | RTX 3060 Ti | 512GB SSD</p>
+                        <p class="card-text">Excelente para juegos a 1080p y 1440p</p>
+                        <button class="btn btn-success agregar-carrito" data-id="3" data-nombre="PC Gaming Intel i7" data-precio="1800" data-imagen="3w.jpg">
+                            1.800,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC Gaming 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="4w.jpg" class="card-img-top" alt="PC Gaming Ryzen 7">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming Ryzen 7</h5>
+                        <p class="card-text">AMD Ryzen 7 5800X | 16GB RAM | RTX 3070 Ti | 512GB SSD</p>
+                        <p class="card-text">Ideal para gamers y creadores de contenido</p>
+                        <button class="btn btn-success agregar-carrito" data-id="4" data-nombre="PC Gaming Ryzen 7" data-precio="2200" data-imagen="4w.jpg">
+                            2.200,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC Gaming 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="5w.png" class="card-img-top" alt="PC Gaming i5-11600K">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming i5-11600K</h5>
+                        <p class="card-text">Intel i5-11600K | 16GB RAM | GTX 1660 Super | 1TB HDD</p>
+                        <p class="card-text">PC asequible para juegos de alta calidad</p>
+                        <button class="btn btn-success agregar-carrito" data-id="5" data-nombre="PC Gaming i5-11600K" data-precio="1200" data-imagen="5w.png">
+                            1.200,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC Gaming 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="6w.png" class="card-img-top" alt="PC Gaming RTX 4090">
+                    <div class="card-body">
+                        <h5 class="card-title">PC Gaming RTX 4090</h5>
+                        <p class="card-text">Intel i9-12900K | 64GB RAM | RTX 4090 | 2TB SSD</p>
+                        <p class="card-text">La mejor opción para juegos en 8K</p>
+                        <button class="btn btn-success agregar-carrito" data-id="6" data-nombre="PC Gaming RTX 4090" data-precio="6000" data-imagen="6w.png">
+                            6.000,00 BS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PC Gaming 7 -->
+<div class="col">
+    <div class="card">
+        <img src="7w.jpg" class="card-img-top" alt="PC Gaming i9-13900K">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming i9-13900K</h5>
+            <p class="card-text">Intel i9-13900K | 64GB RAM | RTX 4080 | 2TB SSD</p>
+            <p class="card-text">Diseñada para el máximo rendimiento en 4K y VR</p>
+            <button class="btn btn-success agregar-carrito" data-id="7" data-nombre="PC Gaming i9-13900K" data-precio="7500" data-imagen="7w.jpg">
+                7.500,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- PC Gaming 8 -->
+<div class="col">
+    <div class="card">
+        <img src="8w.jpg" class="card-img-top" alt="PC Gaming Ryzen 5">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming Ryzen 5</h5>
+            <p class="card-text">AMD Ryzen 5 5600X | 16GB RAM | GTX 1660 Ti | 1TB SSD</p>
+            <p class="card-text">Perfecta para gaming en 1080p con buen rendimiento</p>
+            <button class="btn btn-success agregar-carrito" data-id="8" data-nombre="PC Gaming Ryzen 5" data-precio="1500" data-imagen="8w.jpg">
+                1.500,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- PC Gaming 9 -->
+<div class="col">
+    <div class="card">
+        <img src="9w.png" class="card-img-top" alt="PC Gaming AMD Ryzen 7 5800X">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming AMD Ryzen 7 5800X</h5>
+            <p class="card-text">AMD Ryzen 7 5800X | 32GB RAM | RTX 3070 | 1TB SSD</p>
+            <p class="card-text">Alta velocidad y rendimiento en juegos AAA</p>
+            <button class="btn btn-success agregar-carrito" data-id="9" data-nombre="PC Gaming AMD Ryzen 7 5800X" data-precio="2500" data-imagen="9w.png">
+                2.500,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- PC Gaming 10 -->
+<div class="col">
+    <div class="card">
+        <img src="10w.png" class="card-img-top" alt="PC Gaming Intel i5-11400F">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming Intel i5-11400F</h5>
+            <p class="card-text">Intel i5-11400F | 16GB RAM | GTX 1650 Super | 500GB SSD</p>
+            <p class="card-text">PC económica para juegos en 1080p</p>
+            <button class="btn btn-success agregar-carrito" data-id="10" data-nombre="PC Gaming Intel i5-11400F" data-precio="1000" data-imagen="10w.png">
+                1.000,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- PC Gaming 11 -->
+<div class="col">
+    <div class="card">
+        <img src="2w.jpg" class="card-img-top" alt="PC Gaming RTX 4070">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming RTX 4070</h5>
+            <p class="card-text">Intel i7-12700K | 32GB RAM | RTX 4070 | 1TB SSD</p>
+            <p class="card-text">Ideal para jugadores de eSports y streamers</p>
+            <button class="btn btn-success agregar-carrito" data-id="11" data-nombre="PC Gaming RTX 4070" data-precio="4200" data-imagen="2w.jpg">
+                4.200,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- PC Gaming 12 -->
+<div class="col">
+    <div class="card">
+        <img src="1w.jpg" class="card-img-top" alt="PC Gaming Ryzen 9 5900X">
+        <div class="card-body">
+            <h5 class="card-title">PC Gaming Ryzen 9 5900X</h5>
+            <p class="card-text">AMD Ryzen 9 5900X | 64GB RAM | RTX 4090 | 2TB SSD</p>
+            <p class="card-text">El mejor rendimiento para gaming y tareas de productividad</p>
+            <button class="btn btn-success agregar-carrito" data-id="12" data-nombre="PC Gaming Ryzen 9 5900X" data-precio="8000" data-imagen="1w.jpg">
+                8.000,00 BS
+            </button>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5>Informacion</h5>
+                    <p><a href="acercade.html" class="footer-link">Acerca de</a></p>
+                    <p><a href="Creadores.html" class="footer-link">Creadores</a></p>
+                    
+                    
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Preguntas</h5>
+                    <p><a href="comocomprar.html" class="footer-link">Como comprar</a></p>
+                    <p><a href="sepamas.html" class="footer-link">Sepa mas de computadoras</a></p>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <h5>Redes Sociales</h5>
+                    <p>📞 Teléfono: 69949446</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="facebook_icon-icons.com_59205.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://instagram.com/pcstoresucre" target="_blank" class="social-link">
+                            <img src="Instagram_icon-icons.com_66804.png" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+    
+            
+    
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+
+</body>
+</html>

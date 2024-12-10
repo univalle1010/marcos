@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creadores - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para el fondo oscuro y textos claros */
+        body {
+            background-color: #121212; /* Fondo oscuro */
+            color: #e1e1e1; /* Texto claro para contraste */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+
+        /* Encabezado */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #333;
+            color: #e63946;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+
+        /* Contenedor de creadores */
+        .creators-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .creator-card {
+            background-color: #1f1f1f;
+            color: #e1e1e1;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 500px;
+            transition: transform 0.3s ease;
+        }
+
+        .creator-card:hover {
+            transform: scale(1.05);
+        }
+
+        .creator-card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .creator-card h3 {
+            color: #e63946;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .creator-card p {
+            color: #bbb;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1f1f1f;
+            color: #e1e1e1;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .creator-card {
+                padding: 20px;
+            }
+
+            .creator-card h3 {
+                font-size: 1.8rem;
+            }
+
+            .creator-card p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PC STORE SUCRE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte Técnico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>Conoce a los Creadores</h1>
+        <p>Somos un equipo apasionado por la tecnología y el mundo de las computadoras.</p>
+    </div>
+
+    <!-- Contenedor de Creadores -->
+    <div class="creators-container">
+        <div class="creator-card">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Giam Marcos Tejerina Lucas">
+            <h3>Giam Marcos Tejerina Lucas</h3>
+            <p>Giam Marcos es el principal creador detrás de PC Store Sucre. Con una pasión por la tecnología y las computadoras, se dedica a crear experiencias únicas para los usuarios. Su visión es ofrecer productos de calidad y un excelente servicio.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+        <p><a href="acercade.html">Acerca de</a> | <a href="sepamas.html">Sepa más de computadoras</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

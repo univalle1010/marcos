@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Consejos para Optimizar tu PC - PC Store Sucre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para fondo oscuro y diseño atractivo */
+        body {
+            background-color: #1a1a2e; /* Fondo oscuro pero elegante */
+            color: #e1e1e1; /* Texto claro */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #16213e;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #0f3460;
+            color: #e63946;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        /* Sección de consejos */
+        .tips-container {
+            margin-top: 40px;
+        }
+
+        .tip-card {
+            background-color: #16213e;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            padding: 25px;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: scale(1.05);
+        }
+
+        .tip-card h3 {
+            color: #e63946;
+            font-size: 1.8rem;
+        }
+
+        .tip-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        /* Botón interactivo */
+        .btn-action {
+            background-color: #e63946;
+            border-color: #e63946;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-action:hover {
+            background-color: #d62c1a;
+            border-color: #d62c1a;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #16213e;
+            color: #e1e1e1;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .tip-card h3 {
+                font-size: 1.5rem;
+            }
+            .tip-card p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PC STORE SUCRE</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte Técnico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>5 Consejos para Optimizar tu PC</h1>
+        <p>Mejora el rendimiento de tu PC con estos prácticos consejos. ¡Tu computadora te lo agradecerá!</p>
+    </div>
+
+    <!-- Sección de Consejos -->
+    <div class="container tips-container">
+        <!-- Consejo 1 -->
+        <div class="tip-card" id="tip1">
+            <h3>1. Limpia Regularmente tu Disco Duro</h3>
+            <p>El almacenamiento de tu PC puede llenarse rápidamente con archivos innecesarios. Usa herramientas como el "Liberador de espacio en disco" o programas de terceros para eliminar archivos temporales y mejorar el rendimiento.</p>
+            <button class="btn-action" onclick="toggleTip('tip1')">Ver más detalles</button>
+            <p id="tip1Details" style="display:none; font-size: 0.9rem;">Para realizar una limpieza más profunda, desinstala programas que no uses y mueve archivos pesados a un almacenamiento externo.</p>
+        </div>
+
+        <!-- Consejo 2 -->
+        <div class="tip-card" id="tip2">
+            <h3>2. Mantén tu Sistema Operativo Actualizado</h3>
+            <p>Las actualizaciones de software no solo incluyen nuevas características, sino también parches de seguridad y mejoras de rendimiento que pueden hacer que tu PC funcione más rápido.</p>
+            <button class="btn-action" onclick="toggleTip('tip2')">Ver más detalles</button>
+            <p id="tip2Details" style="display:none; font-size: 0.9rem;">Asegúrate de que tu sistema esté configurado para instalar las actualizaciones automáticamente.</p>
+        </div>
+
+        <!-- Consejo 3 -->
+        <div class="tip-card" id="tip3">
+            <h3>3. Utiliza un Antivirus de Confianza</h3>
+            <p>Los virus y el malware pueden ralentizar tu PC considerablemente. Instalar un buen antivirus no solo protegerá tu equipo, sino que también mantendrá el rendimiento óptimo.</p>
+            <button class="btn-action" onclick="toggleTip('tip3')">Ver más detalles</button>
+            <p id="tip3Details" style="display:none; font-size: 0.9rem;">Realiza escaneos periódicos y mantén actualizado tu software antivirus.</p>
+        </div>
+
+        <!-- Consejo 4 -->
+        <div class="tip-card" id="tip4">
+            <h3>4. Desactiva Programas de Inicio Innecesarios</h3>
+            <p>Muchos programas se configuran para ejecutarse al inicio, lo que puede ralentizar el arranque de tu PC. Desactiva los que no son esenciales para acelerar el proceso.</p>
+            <button class="btn-action" onclick="toggleTip('tip4')">Ver más detalles</button>
+            <p id="tip4Details" style="display:none; font-size: 0.9rem;">Usa el Administrador de tareas de Windows para controlar qué programas se inician automáticamente.</p>
+        </div>
+
+        <!-- Consejo 5 -->
+        <div class="tip-card" id="tip5">
+            <h3>5. Realiza Mantenimiento de Hardware</h3>
+            <p>No todo el mantenimiento es digital. Limpiar el polvo de tu PC, asegurarte de que todos los cables estén bien conectados y mejorar la ventilación ayudará a mantener tu equipo funcionando sin problemas.</p>
+            <button class="btn-action" onclick="toggleTip('tip5')">Ver más detalles</button>
+            <p id="tip5Details" style="display:none; font-size: 0.9rem;">Apaga y desconecta tu PC antes de limpiar los componentes. Asegúrate de que las ventilas estén libres de polvo.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PC Store Sucre. Todos los derechos reservados.</p>
+        <p><a href="contactos.html">Contáctanos</a> | <a href="sepamas.html">Sepa mas de computadoras</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para mostrar u ocultar los detalles de cada consejo
+        function toggleTip(tipId) {
+            var tipDetails = document.getElementById(tipId + "Details");
+            if (tipDetails.style.display === "none") {
+                tipDetails.style.display = "block";
+            } else {
+                tipDetails.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
